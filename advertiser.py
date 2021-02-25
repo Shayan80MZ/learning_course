@@ -16,7 +16,7 @@ class Advertiser(BaseAdvertising):
         self.__name = name
 
     def help(self):
-        pass
+        return dir(self)
 
     @staticmethod
     def getTotalClicks():

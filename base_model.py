@@ -1,3 +1,6 @@
+from ad import Ad
+
+
 class BaseAdvertising:
     def __init__(self, id):
         self.__id = id
@@ -5,7 +8,10 @@ class BaseAdvertising:
         self.__views = 0
 
     def describeMe(self):
-        pass
+        if isinstance(self, Ad):
+            return "This class is used for ads"
+        else:
+            return "This class is used for advertisers"
 
     def getClicks(self):
         return self.__clicks
