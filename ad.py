@@ -29,3 +29,6 @@ class Ad(BaseAdvertising):
 
     def setAdvertiser(self, advertiser):
         self.__advertiser = advertiser
+
+    def describeMe(self):
+        return "This class is used for ads"

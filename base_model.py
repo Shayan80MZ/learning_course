@@ -8,10 +8,7 @@ class BaseAdvertising:
         self.__views = 0
 
     def describeMe(self):
-        if isinstance(self, Ad):
-            return "This class is used for ads"
-        else:
-            return "This class is used for advertisers"
+        pass
 
     def getClicks(self):
         return self.__clicks

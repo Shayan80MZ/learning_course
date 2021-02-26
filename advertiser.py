@@ -18,6 +18,9 @@ class Advertiser(BaseAdvertising):
     def help(self):
         return dir(self)
 
+    def describeMe(self):
+        return "This class is used for advertisers"
+
     @staticmethod
     def getTotalClicks():
         clicksList = list()
